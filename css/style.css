@@ -10,7 +10,6 @@ body {
 }
 
 header, .content, footer {
-    
     color: #FFF;
     box-sizing: border-box;
 }
@@ -32,25 +31,39 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 200px;
-    margin-left: 200px; /* Adjusted margin to match the fixed header width */
+    margin-left: 200px;
 }
 
-.box {
+.box1,
+.box2,
+.box3 {
     text-align: left;
     padding: 10px;
     background-color: #FFF;
     border-radius: 10px;
-    margin: 2px; /* Adjusted margin to be 2px between boxes */
+    margin: 2px;
     box-sizing: border-box;
-    width: 200px; /* Fixed width for the boxes */
-    height: 200px;
+    width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-.box:hover {
+.box1 {
+    height: 400px;
+}
+
+.box2,
+.box3 {
+    height: 200px;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
     transform: scale(1.05);
 }
+
+
 
 footer {
     text-align: center;
